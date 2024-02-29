@@ -37,8 +37,8 @@ const Hero = () => {
         <div class="hidden lg:block ml-auto">
           <a class="inline-flex items-center justify-center h-10 mr-4 px-4 text-center text-sm text-white hover:text-teal-400 font-semibold transition duration-200" href="#">Login</a>
           <a class="group inline-block justify-center p-1 text-center text-sm text-white font-semibold rounded-lg" href="#">
-            <div class="inline-flex items-stretch h-10 p-0.5 rounded-lg bg-gradient-to-b from-gray-500 via-gray-700 to-gray-700 hover:to-gray-800">
-              <div class="flex items-center px-4 bg-gray-700 group-hover:bg-opacity-40 rounded-md transition duration-300">
+            <div class="inline-flex items-stretch h-10 p-0.5 rounded-lg bg-gradient-to-b from-white via-gray-200 to-gray-300 hover:to-gray-700">
+              <div class="flex items-center px-4 bg-white group-hover:bg-opacity-40 rounded-md transition duration-300">
                 <span>Get Started</span>
               </div>
             </div>
