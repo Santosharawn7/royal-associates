@@ -1,61 +1,133 @@
-import React from "react";
+import React, { useState } from "react";
+import { sendEmailConfirmation } from "./Sendemailconfirm";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  // const [phone, setPhone] = useState("");
+  const form = React.useRef();
 
+  const sendEmail = async (e) => {
+    try {
+      const isSendComplete = await sendEmailConfirmation(email, name, subject);
+      if (isSendComplete) return console.log(isSendComplete)
+        throw new Error("send error")
+    } catch (err) {
+      console.error(err)
+    }
+  };
 
-    return(
-        
-<section class="relative py-12 md:py-24 bg-teal-900 overflow-hidden">
-  <div class="relative container px-4 mx-auto">
-    <div class="absolute top-0 left-0 w-full h-full px-4">
-      <div class="px-8 pt-96 bg-radial-dark-green rounded-3xl">
-        <img class="block mx-auto" src="aurora-assets/contact/lines-background-green.png" alt=""/>
-      </div>
-    </div>
-    <div class="relative px-10 py-16">
-      <div class="max-w-lg mb-12 mx-auto text-center">
-        <h1 class="font-heading tracking-tight text-4xl sm:text-5xl font-bold text-white mb-4">Get in touch with us for more information</h1>
-        <p class="text-lg text-gray-400">If you need help or have a question, we&rsquo;re here for you</p>
-      </div>
-      <div class="max-w-xl mx-auto p-8 bg-teal-700 border border-gray-700 rounded-xl">
-        <form action="">
-          <div class="mb-4">
-            <label class="block mb-1 text-sm font-medium text-white" for="">Name</label>
-            <input class="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800" type="text" placeholder="Your name"/>
+  return (
+    <section class="relative overflow-hidden bg-violet-300 py-12 md:py-12" id="contactUs">
+      <div class="container relative mx-auto px-4">
+        <div class="absolute left-0 top-0 h-full w-full px-4">
+          <div class="bg-radial-dark-green rounded-3xl px-8 pt-96">
+            <img
+              class="mx-auto block"
+              src="aurora-assets/contact/lines-background-green.png"
+              alt=""
+            />
           </div>
-          <div class="mb-4">
-            <label class="block mb-1 text-sm font-medium text-white" for="">Email</label>
-            <input class="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800" type="email" placeholder="john@email.com"/>
+        </div>
+        <div class="relative md:flex px-10 py-16">
+          <div class=" font-serif text-center m-auto max-w-auto" >
+            <h1 class="font-heading mb-10 text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl">
+            CONTACT US
+            </h1>
+            <p class="text-lg mb-2 text-gray-600">
+            Fill out the form and we will be in touch with you shortly.
+            </p>
+            <p class="text-xl mb-4 text-gray-600">
+            Tel:<a href="tel:647-233-2991">647-233-2991</a>
+            </p>
+            <a
+              href="mailto:royalassociates.legal@gmail.com"
+            >
+              <span className="text-2xl italic mb-4 text-gray-600 hover:underline">royalassociates.legal@gmail.com</span>
+            </a>
           </div>
-          <div class="mb-4">
-            <label class="block mb-1 text-sm font-medium text-white" for="">Subject</label>
-            <div class="relative w-full bg-gray-800">
-              <select class="relative z-10 py-2 px-4 h-11 w-full cursor-pointer bg-transparent text-gray-500 placeholder-gray-500 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800 appearance-none" name="" id="">
-                <option value="">Select subject</option>
-                <option value="">Marketing</option>
-                <option value="">Development</option>
-              </select>
-              <span class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2">
-                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="#9CABA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </span>
-            </div>
+          <div class="mx-auto md:flex-1 md:max-w-[700px] mt-4 rounded-xl border border-gray-700 bg-gray-500 p-8">
+            
+            <form action="">
+              <div class="mb-4">
+                <label class="mb-1 block text-sm font-medium text-white" for="">
+                  Name
+                </label>
+                <input
+                  class="focus:border-yellowGreen-800 focus:ring-yellowGreen-800 h-11 w-full rounded-md border border-gray-700 bg-gray-100 px-4 py-2 text-gray-500 placeholder-gray-500 outline-none ring ring-transparent"
+                  type="text"
+                  onChange={(e) => setName(e.target.value)}
+                placeholder="Your name"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="mb-1 block text-sm font-medium text-white" for="">
+                  Email
+                </label>
+                <input
+                  class="focus:border-yellowGreen-800 focus:ring-yellowGreen-800 h-11 w-full rounded-md border border-gray-700 bg-gray-100 px-4 py-2 text-gray-500 placeholder-gray-500 outline-none ring ring-transparent"
+                  type="email"
+                  placeholder="john@email.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              {/* <div class="mb-4">
+                <label class="mb-1 block text-sm font-medium text-white" for="">
+                  Phone
+                </label>
+                <input
+                  class="focus:border-yellowGreen-800 focus:ring-yellowGreen-800 h-11 w-full rounded-md border border-gray-700 bg-gray-800 px-4 py-2 text-gray-500 placeholder-gray-500 outline-none ring ring-transparent"
+                  type="phone"
+                  placeholder="+1 123 456 7890"
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+              </div> */}
+              <div class="mb-4">
+                <label class="mb-1 block text-sm font-medium text-white" for="">
+                  Subject
+                </label>
+                <input
+                  class="focus:border-yellowGreen-800 focus:ring-yellowGreen-800 h-11 w-full rounded-md border border-gray-700 bg-gray-100 px-4 py-2 text-gray-600 placeholder-gray-500 outline-none ring ring-transparent"
+                  type="text"
+                  onChange={(e) => setSubject(e.target.value)}
+                placeholder="Subject"
+                />
           </div>
           <div class="mb-8">
-            <label class="block mb-1 text-sm font-medium text-white" for="">Message</label>
-            <textarea class="block py-2 px-4 w-full h-32 text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800 resize-none" placeholder="Enter your message"></textarea>
+            <label class="mb-1 block text-sm font-medium text-white" for="">
+              Message
+            </label>
+            <textarea
+              class="focus:border-yellowGreen-800 focus:ring-yellowGreen-800 block h-32 w-full resize-none rounded-md border border-gray-00 bg-gray-100 px-4 py-2 text-gray-500 placeholder-gray-500 outline-none ring ring-transparent"
+              placeholder="Enter your message"
+            ></textarea>
           </div>
-          <button class="xs:flex-shrink-0 group relative flex w-full h-14 xs:inline-flex items-center justify-center px-4 p-px font-bold text-gray-900 bg-yellowGreen-600 rounded-lg transition-all duration-300 focus:outline-none" type="submit">
-            <div class="absolute top-0 left-0 w-full h-full rounded-lg ring ring-yellowGreen-900 animate-pulse group-hover:ring-0 transition duration-300"></div>
+          <button
+            class="xs:flex-shrink-0 xs:inline-flex bg-gray-600 group relative flex h-14 w-full items-center justify-center rounded-lg p-px px-4 font-bold text-white transition-all duration-300 focus:outline-none"
+            type="submit"
+            onClick={(e) => {
+
+              sendEmail()
+              }}
+          >
+            <div class="ring-yellowGreen-900 absolute left-0 top-0 h-full w-full animate-pulse rounded-lg ring transition duration-300 group-hover:ring-0"></div>
             <span>Submit</span>
           </button>
         </form>
+       
       </div>
+      
     </div>
-  </div>
-</section>
-    )
-}
-
-export default Contact
+    <iframe
+          className="w-full h-96 rounded-3xl pb-4"
+          src="https://maps.google.com/maps?q=Seneca College Newnham Campus, Finch, Seneca Hill,
+                      Toronto, ON M2J 5G3&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        ></iframe>
+        <p className="text-sm md:text-base pb-1 font-serif italic mb-4 text-gray-600 hover:underline">​​​​Copyright © 2023 Royal Associates. </p>
+        <p className="text-sm md:text-base font-serif italic mb-4 text-gray-600 hover:underline">The information provided on this website is for information purposes only and does not <br></br> constitute legal advice.</p>
+      </div >
+    </section >
+  );
+};
+export default Contact;
