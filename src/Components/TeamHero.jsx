@@ -3,10 +3,17 @@ import React from "react";
 const TeamHero = () => {
     return (
 
-<section class="mt-10 relative py-20">
-  <img class="h-[180%] w-full opacity-30 lg:block block lg:absolute bottom-0 right-0 mt-20" src="./Assets/legal-compliance-guide-banner.jpg" alt=""/>
-  <div class="relative block bg-purple-300 border-rounded container px-4 ml-24 text-center">
-    <h2 class="mt-8 mb-8 lg:mb-12 text-white text-2xl font-serif lg:text-6xl font-semibold">Meet Our Team</h2>
+
+<section class="relative md:py-36 overflow-hidden bg-gray-100">
+  <img class="xs:block absolute top-0 left-0 w-full h-full md:object-top object-cover" src="./Assets/legal-compliance-guide-banner.jpg" alt=""/>
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-xs pt-24 sm:max-w-md lg:max-w-lg xl:max-w-2xl">
+      <h1 class="font-heading text-4xl sm:text-6xl block border-2 border-solid bg-purple-800 rounded-3xl p-4 text-gray-300 lg:text-8xl xl:text-10xl font-bold mb-12">
+        <span>Meet Our </span>
+        <span class="font-serif italic">Team</span>
+      </h1>
+      
+    </div>
   </div>
 </section>
     );

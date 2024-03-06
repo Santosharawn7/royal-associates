@@ -2,7 +2,7 @@ import React from "react";
 
 const Announcements = () => {
     return (  
-<section class="py-20">
+<section>
     <div className="text-center mb-10 bg-gray-300 py-20 font-serif">
         <h1 class="font-medium font-heading text-gray-700 text-4xl md:text-6xl xl:text-7xl mb-5">Recent News</h1>
         <p className="text-gray-500 text-base">Stay up to date with the most recent industry news and relevant legal cases.</p>
