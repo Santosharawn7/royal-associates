@@ -29,7 +29,7 @@ function Navbar() {
                 </a>
               </div>
               {/* primary */}
-              <div className="hidden lg:flex gap-8 uppercase font-serif menu">
+              <div className="hidden text-xl lg:flex gap-8 uppercase font-serif menu">
                 <a href="/" className=" text-gray-900 hover:underline hover:text-white">
                   Home
                 </a>
@@ -54,7 +54,7 @@ function Navbar() {
               {/* Mobile navigation toggle */}
               <div className="lg:hidden flex items-center">
                 <button onClick={() => setToggleMenu(!toggleMenu)}>
-                  <Bars3Icon className="h-6 bg-gray-500 block rounded" />
+                  <Bars3Icon className="h-8 block rounded" />
                 </button>
               </div>
             </div>
@@ -67,7 +67,7 @@ function Navbar() {
           }`}
         >
           <div className="px-8">
-            <div className="flex flex-col gap-8 font-bold uppercase text-gray-900 font-serif tracking-wider">
+            <div className="flex flex-col gap-8 text-sm font-bold uppercase text-gray-900 font-serif tracking-wider">
             <hr/>
               <a href="/" className="border-l-4 border-gray-600 hover:text-white">
                 Home
