@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section class="relative overflow-hidden bg-violet-300 py-12 md:py-12" id="contactUs">
+    <section class="relative overflow-hidden bg-stone-400 py-12 md:py-12" id="contactUs">
       <div class="container relative mx-auto px-4">
         <div class="absolute left-0 top-0 h-full w-full px-4">
           <div class="bg-radial-dark-green rounded-3xl px-8 pt-96">
@@ -44,10 +44,10 @@ const Contact = () => {
             <a
               href="mailto:royalassociates.legal@gmail.com"
             >
-              <span className="text-2xl italic mb-4 text-gray-600 hover:underline">royalassociates.legal@gmail.com</span>
+              <span className=" text-medium md:text-2xl italic mb-4 text-gray-600 hover:underline">royalassociates.legal@gmail.com</span>
             </a>
           </div>
-          <div class="mx-auto md:flex-1 md:max-w-[700px] mt-4 rounded-xl border border-gray-700 bg-gray-500 p-8">
+          <div class="mx-auto md:flex-1 md:max-w-[700px] mt-4 rounded-xl border border-gray-700 bg-stone-500 p-8">
             
             <form action="">
               <div class="mb-4">

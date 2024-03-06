@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="app">
-      <nav className="sticky bg-violet-950 top-0 z-50">
+      <nav className="sticky bg-stone-500 top-0 z-50">
         <div className="max-w-7xl mx-auto sticky top-0">
           <div className="flex mx-auto justify-between w-5/6 ">
             {/* Primary menu and logo */}
@@ -30,12 +30,12 @@ function Navbar() {
               </div>
               {/* primary */}
               <div className="hidden lg:flex gap-8 uppercase font-serif menu">
-                <a href="/" className=" text-gray-500  hover:text-white">
+                <a href="/" className=" text-gray-900 hover:underline hover:text-white">
                   Home
                 </a>
-                <a href="team" className=" text-gray-500  hover:text-white">Team</a>
-                <a href="announcements" className=" text-gray-500  hover:text-white">Announcements</a>
-                <a href="#contactUs" className=" text-gray-500  hover:text-white">Contact us</a>
+                <a href="team" className=" text-gray-900 hover:underline hover:text-white">Team</a>
+                <a href="announcements" className=" text-gray-900 hover:underline hover:text-white">Announcements</a>
+                <a href="#contactUs" className=" text-gray-900 hover:underline hover:text-white">Contact us</a>
               </div>
             </div>
             {/* secondary */}
@@ -62,12 +62,12 @@ function Navbar() {
         </div>
         {/* mobile navigation */}
         <div
-          className={` w-full  bg-violet-950 overflow-hidden sticky top-0 z-0 flex flex-col lg:hidden gap-12  origin-top duration-700 ${
+          className={` w-full  bg-stone-500 overflow-hidden sticky top-0 z-0 flex flex-col lg:hidden gap-12  origin-top duration-700 ${
             !toggleMenu ? "h-0" : "h-full"
           }`}
         >
           <div className="px-8">
-            <div className="flex flex-col gap-8 font-bold uppercase text-gray-500 font-sans tracking-wider">
+            <div className="flex flex-col gap-8 font-bold uppercase text-gray-900 font-serif tracking-wider">
             <hr/>
               <a href="/" className="border-l-4 border-gray-600 hover:text-white">
                 Home
