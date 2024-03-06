@@ -104,7 +104,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <button
-            class="xs:flex-shrink-0 xs:inline-flex bg-gray-600 group relative flex h-14 w-full items-center justify-center rounded-lg p-px px-4 font-bold text-white transition-all duration-300 focus:outline-none"
+            class="xs:flex-shrink-0 xs:inline-flex bg-stone-700 group relative flex h-14 w-full items-center justify-center rounded-lg p-px px-4 font-bold text-white transition-all duration-300 focus:outline-none"
             type="submit"
             onClick={(e) => {
 
