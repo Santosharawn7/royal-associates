@@ -11,6 +11,7 @@ const Contact = () => {
   const sendEmail = async (e) => {
     try {
       const isSendComplete = await sendEmailConfirmation(email, name, subject);
+      console.log(email, name, subject)
       if (isSendComplete) return console.log(isSendComplete)
         throw new Error("send error")
     } catch (err) {

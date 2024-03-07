@@ -1,3 +1,4 @@
+import { data } from "autoprefixer";
 import emailjs from "emailjs-com";
  
  
@@ -14,10 +15,11 @@ export const sendEmailConfirmation = async (
  
     return emailjs.send(
         "service_u1hr2f8",
-        "template_u1o22lj",
+        "template_l6v7dfi",
         templateParams,
         "MQR592E_OOYAeYUlc"
     ).then((response) => {
+        console.log(data)
         return {
             status: response.status,
             data: response.data
