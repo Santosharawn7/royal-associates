@@ -13,10 +13,10 @@ export const sendEmailConfirmation = async (
     }
  
     return emailjs.send(
-        "service_v49fpsk",
-        "template_h7qancd",
+        "service_u1hr2f8",
+        "template_u1o22lj",
         templateParams,
-        "33WreeumBb14zvzw-"
+        "MQR592E_OOYAeYUlc"
     ).then((response) => {
         return {
             status: response.status,

@@ -121,8 +121,8 @@ const Contact = () => {
     </div>
     <iframe
           className="w-full h-96 rounded-3xl pb-4"
-          src="https://maps.google.com/maps?q=Seneca College Newnham Campus, Finch, Seneca Hill,
-                      Toronto, ON M2J 5G3&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          src="https://maps.google.com/maps?q=Royal Associates Head Office, Main Street, East York,
+                      Toronto, ON M4C 4X3&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
         ></iframe>
         <p className="text-sm md:text-base pb-1 font-serif italic mb-4 text-gray-600 hover:underline">​​​​Copyright © 2023 Royal Associates. </p>
         <p className="text-sm md:text-base font-serif italic mb-4 text-gray-600 hover:underline">The information provided on this website is for information purposes only and does not <br></br> constitute legal advice.</p>
