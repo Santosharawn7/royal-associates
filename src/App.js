@@ -14,6 +14,11 @@ import {
 } from "react-router-dom";
 import  Navbar  from "./Components/Navbar";
 import Home from "./Components/Home";
+import Smallclaims from "./Components/Smallclaims";
+import Landlordtenant from "./Components/LandlordTenant";
+import OccupationalHealth from "./Components/OccupationHealth";
+import ProcessServing from "./Components/ProcessServing";
+import EmploymentLaw from "./Components/EmploymentLaw";
 
 function App() {
   return (
@@ -27,15 +32,14 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<AboutUs />} />
-                <Route
-                    path="/contact"
-                    element={<Contact />}
-                />
+                <Route path="/contact" element={<Contact />}/>
                 <Route path="/announcements" element={<Announcements />} />
-                <Route
-                    path="/team"
-                    element={<Team />}
-                />
+                <Route path="/team" element={<Team />} />
+                <Route path="/small-claims" element={<Smallclaims />} />
+                <Route path="/landlord-&-tenants" element={<Landlordtenant />} />
+                <Route path="/occupational-health" element={<OccupationalHealth />} />
+                <Route path="/process-serving" element={<ProcessServing />} />
+                <Route path="/employment-law" element={<EmploymentLaw />} />
             </Routes>
             <Contact/>
         </Router>
