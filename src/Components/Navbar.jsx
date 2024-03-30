@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="app">
-      <nav className="sticky bg-stone-500 top-0 z-50">
+      <nav className="sticky bg-opacity-50 bg-stone-700 top-0 z-50">
         <div className="max-w-7xl mx-auto sticky top-0">
           <div className="flex mx-auto justify-between w-5/6 ">
             {/* Primary menu and logo */}
@@ -24,7 +24,7 @@ function Navbar() {
                   href="/"
                   className="flex gap-1 font-bold text-gray-700 items-center "
                 >
-                  <img src="/Assets/RAsociate.svg" className=" h-16 md:h-20 w-auto"></img>
+                  <img src="/Assets/RAsociate.svg" className=" h-16 md:h-[100px] w-auto"></img>
                   <span></span>
                 </a>
               </div>
@@ -33,7 +33,7 @@ function Navbar() {
                 <a href="/" className=" text-gray-900 hover:underline hover:text-white">
                   Home
                 </a>
-                <a href="team" className=" text-gray-900 hover:underline hover:text-white">Team</a>
+                <a href="team" className=" text-gray-900 scrolled{} hover:underline hover:text-white">Team</a>
                 <a href="announcements" className=" text-gray-900 hover:underline hover:text-white">Announcements</a>
                 <a href="#contactUs" className=" text-gray-900 hover:underline hover:text-white">Contact us</a>
               </div>
