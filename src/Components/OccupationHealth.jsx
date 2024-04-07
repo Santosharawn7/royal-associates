@@ -30,7 +30,7 @@ const OccupationalHealth = () => {
             
             <div class="mb-6 p-6 border-l-2 border-yellow-500">
               <p class="mb-4 font-serif text-5xl md:text-7xl text-yellow-600 leading-tight font-bold text-coolGray-800 text-left ">
-              WSIB | Occupational Health & Safety
+             Occupational Health & Safety
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">

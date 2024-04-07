@@ -35,7 +35,7 @@ const Ourservices = () => {
         <div class="flex items-center justify-center hover:scale-110 transition duration-300 ease-in-out bg-white  rounded-lg shadow-slate-950 shadow-lg overflow-hidden">
           <img class="object-contain w-[260px] h-[260px] flex flex-row p-5" src="./Assets/services.png" alt=""/>
         </div>
-        <p class="font-bold pt-4 font-serif text-gray-500 mb-8 lg:text-2xl is-size-5 has-text-grey-dark">WSIB | <br></br>Occupational <br></br>Health & Safety</p>
+        <p class="font-bold pt-4 font-serif text-gray-500 mb-8 lg:text-2xl is-size-5 has-text-grey-dark">Occupational <br></br>Health & Safety</p>
 
       </a>
       <a id="process-serving" class="w-2/3 md:w-1/3 lg:w-1/3 px-4" href="/process-serving">
