@@ -19,6 +19,7 @@ import Landlordtenant from "./Components/LandlordTenant";
 import OccupationalHealth from "./Components/OccupationHealth";
 import ProcessServing from "./Components/ProcessServing";
 import EmploymentLaw from "./Components/EmploymentLaw";
+import WSIB from "./Components/Wsib";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/occupational-health" element={<OccupationalHealth />} />
                 <Route path="/process-serving" element={<ProcessServing />} />
                 <Route path="/employment-law" element={<EmploymentLaw />} />
+                <Route path="/wsib" element={<WSIB />} />
             </Routes>
             <Contact/>
         </Router>

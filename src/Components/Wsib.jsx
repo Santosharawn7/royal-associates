@@ -1,6 +1,6 @@
 import React from "react";
 
-const OccupationalHealth = () => {
+const WSIB = () => {
     return (  
 
         <section
@@ -20,7 +20,7 @@ const OccupationalHealth = () => {
             </div>
           </div>
           <div class="mb-10 block mx-auto max-w-max w-80 overflow-hidden rounded-lg">
-            <img src="./Assets/services.png" alt="" />
+            <img src="./Assets/wsib.png" alt="" />
           </div>
           <div>
 
@@ -30,13 +30,16 @@ const OccupationalHealth = () => {
             
             <div class="mb-6 p-6 border-l-2 border-yellow-500">
               <p class="mb-4 font-serif text-5xl md:text-7xl text-yellow-600 leading-tight font-bold text-coolGray-800 text-left ">
-              WSIB | Occupational Health & Safety
+              WSIB Claims and Appeals
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">
-              Royal Associates comes with a decade of experience making workspaces safer through effective case management, and consultancy. 
-              Do you have gaps in the overall health and safety of your workspace? Can your employees benefit from understanding their health and safety rights and responsibilities? 
-              If this sounds like your business, Royal Associates can consult and provide recommendations to assist your company in remaining within regulatory compliance.</p>
+              Royal Associates provides a wide range of services in workers compensation insurance. We help businesses and individuals navigate our complex and often confusing "no fault" worker's compensation insurance system. Our full service model address account management, initial reporting, case management, claim cost mitigation, and appeal representation.  With a proven track record, we help lower premiums through effective case management and appeals representation, maintain regulatory compliance, and help to ensure appropriate benefits for workplace parties. If you feel that your business group could benefit from WSIB training, or any of our services then email us at <span><a
+              href="mailto:royalassociates.legal@gmail.com"
+            >
+              <span className="underline text-blue-400 ">royalassociates.legal@gmail.com</span>
+            </a></span>  and to set up a consultation!
+              </p>
               
               <br></br>
               <span class="text-right font-serif text-base md:text-lg text-coolGray-400 font-bold ">
@@ -51,4 +54,4 @@ const OccupationalHealth = () => {
 }
 
 
-export default OccupationalHealth;
+export default WSIB;

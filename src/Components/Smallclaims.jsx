@@ -34,7 +34,7 @@ const Smallclaims = () => {
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">
-              Have you suffered a loss due to a breach of contract or through the actions of someone else? Perhaps someone caused damage to your personal belongings and might owe you money that they refuse to pay. If that is you, Royal Associates can help you recover up to $35,000 through the Small Claims Court. Email us at <span><a
+              Have you suffered a loss due to a breach of contract or through the actions of someone else? Perhaps someone caused damage to your personal belongings or might even owe you money that they refuse to pay. If that is you, Royal Associates can help you recover up to $35,000 through the Small Claims Court. Email us at<span><a
               href="mailto:royalassociates.legal@gmail.com"
             >
               <span className="underline text-blue-400 ">royalassociates.legal@gmail.com</span>

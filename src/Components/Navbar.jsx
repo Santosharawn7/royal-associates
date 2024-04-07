@@ -24,7 +24,7 @@ function Navbar() {
                   href="/"
                   className="flex gap-1 font-bold text-gray-700 items-center "
                 >
-                  <img src="/Assets/RAsociate.svg" className=" h-16 md:h-[100px] w-auto"></img>
+                  <img src="/Assets/RAsociate.svg" className=" h-16 md:h-[100px] w-auto" alt="Royal Associate Logo"></img>
                   <span></span>
                 </a>
               </div>
@@ -53,7 +53,7 @@ function Navbar() {
               </div>
               {/* Mobile navigation toggle */}
               <div className="lg:hidden flex items-center">
-                <button onClick={() => setToggleMenu(!toggleMenu)}>
+                <button id="Menu Dropdown" onClick={() => setToggleMenu(!toggleMenu)}>
                   <Bars3Icon className="h-8 block rounded" />
                 </button>
               </div>

@@ -34,7 +34,10 @@ const Landlordtenant = () => {
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">
-              Royal Associates works to protect your rights as residential tenants.  With the rising cost of housing, and political inaction, more and more tenants there seems to be no end in sight of our housing crisis. As a tenant, it is more important than ever in knowing their rights. Royal Associates works to help protect tenants from bad faith evictions, and other breaches of the Residential Tenancies Act. Additionally, as Royal Associates has seen both sides of the debate, we also offer consulting services to landlords, and help to broker tenancy agreements between landlords and tenants.
+              Royal Associates works to protect your rights of residential tenants.  
+              With the rising cost of housing, political inaction, and non-solutions, there seems to be no end in sight of our housing crisis and the situation could fester. 
+              As a tenant, it is more important than ever in knowing their rights. Royal Associates works to help protect tenants from bad faith evictions, and other breaches of the Residential Tenancies Act. 
+              Additionally, as Royal Associates has seen both sides of the debate, we also offer consulting services to landlords, and help to broker tenancy agreements between landlords and tenants.
               </p>
               
               <br></br>
