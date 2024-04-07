@@ -34,7 +34,8 @@ const ProcessServing = () => {
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">
-              Royal Associates offers services in process serving and filing of court and other legal documents. At competitive rates, we can ensure that your court documents are delivered and appropriately filed with a wide range of court offices within the Greater Toronto Area.              </p>
+              Royal Associates offers services in process serving and the filing of court and other legal documents. 
+              At competitive rates, we can ensure that your court documents are delivered and appropriately filed with a wide range of court within the Greater Toronto Area.</p>
               
               <br></br>
               <span class="text-right font-serif text-base md:text-lg text-coolGray-400 font-bold ">

@@ -34,11 +34,13 @@ const EmploymentLaw = () => {
               </p>
              
               <p class="mb-4 font-serif text-xl md:text-xl leading-tight font-light text-coolGray-800 text-justify md:text-left ">
-              Royal Associates can provide a wide range of services in workers compensation insurance. We focus on a wide range of services related to our "no fault" worker's compensation insurance system including account management, initial reporting, case management, claim cost mitigation, and appeal representation.  With a proven track record, we help lower premiums through effective case management and appeals representation, maintain regulatory compliance, and help to ensure appropriate benefits for workplace parties. If you feel that your business group could benefit from WSIB training, then email us at <span><a
+              Do you have questions about your statutory rights under the Employment Standards Act, or the Occupational Health & Safety & Act. We can help you in the process of navigating 
+              complaints of violations to the Ministry of Labour. 
+              Email us at<span><a
               href="mailto:royalassociates.legal@gmail.com"
             >
               <span className="underline text-blue-400 ">royalassociates.legal@gmail.com</span>
-            </a></span>  and to set up a consultation!
+            </a></span>  with your issue to set up a consultation to discuss your case.
               </p>
               
               <br></br>
