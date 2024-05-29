@@ -17,7 +17,7 @@ const Team = () => {
           
         <h2 class="mb-2 text-3xl md:text-5xl text-center md:text-left font-serif font-semibold font-heading">Jonathan Ekubor</h2>
         <h3 class="mb-10 text-2xl md:text-3xl text-center md:text-left font-serif text-yellow-700 font-bold font-heading">Paralegal</h3>
-            <p class="mb-3 md:mb-4 md:text-xl font-serif text-justify text-gray-500">Jonathan is the managing paralegal and founder of our firm.  Before becoming a business owner, he helped make workspaces safer by mitigating workers compensation claim costs  and premiums for businesses as a Workers Compensation Speacialist. As a Consultant, he also supported businesses deal with employment matters related to human resources, labour relations, occupational health and safety, and human rights.</p>
+            <p class="mb-3 md:mb-4 md:text-xl font-serif text-justify text-gray-500">Jonathan is the managing paralegal and founder of our firm.  Before becoming a business owner, he helped make workspaces safer by mitigating workers compensation claim costs  and premiums for businesses as a Workers Compensation Specialist. As a Consultant, he also supported businesses deal with employment matters related to human resources, labour relations, occupational health and safety, and human rights.</p>
             <p class="mb-3 md:mb-10 md:text-xl font-serif text-justify text-gray-500">Prior to this, he grew up in the East York area of Toronto before obtaining a law clerk, and paralegal diploma from Seneca College, and completed a Bachelor of Arts with Honours in Law & Society at York University.</p>
         </div>
       </div>
